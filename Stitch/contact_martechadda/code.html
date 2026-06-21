@@ -1,0 +1,334 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Contact — MarTechAdda</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet">
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed-dim": "#95d3ba",
+                    "primary-container": "#1c1b1b",
+                    "on-tertiary-fixed-variant": "#474747",
+                    "surface-container-low": "#f3f3f3",
+                    "inverse-primary": "#c8c6c5",
+                    "on-error-container": "#93000a",
+                    "background": "#f9f9f9",
+                    "on-primary-fixed": "#1c1b1b",
+                    "secondary": "#2b6954",
+                    "on-secondary-fixed-variant": "#0b513d",
+                    "outline": "#747878",
+                    "on-primary": "#ffffff",
+                    "on-surface-variant": "#444748",
+                    "on-surface": "#1a1c1c",
+                    "on-background": "#1a1c1c",
+                    "secondary-container": "#adedd3",
+                    "on-tertiary-container": "#848483",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#858383",
+                    "primary-fixed": "#e5e2e1",
+                    "surface-bright": "#f9f9f9",
+                    "on-secondary-fixed": "#002117",
+                    "inverse-on-surface": "#f0f1f1",
+                    "surface-container-high": "#e8e8e8",
+                    "tertiary": "#000000",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "surface-dim": "#dadada",
+                    "tertiary-fixed": "#e4e2e2",
+                    "outline-variant": "#c4c7c7",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "error": "#ba1a1a",
+                    "on-secondary-container": "#306d58",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed-variant": "#474746",
+                    "surface-variant": "#e2e2e2",
+                    "tertiary-fixed-dim": "#c8c6c6",
+                    "surface-tint": "#5f5e5e",
+                    "inverse-surface": "#2f3131",
+                    "surface-container": "#eeeeee",
+                    "on-error": "#ffffff",
+                    "tertiary-container": "#1b1c1c",
+                    "secondary-fixed": "#b0f0d6",
+                    "primary": "#000000",
+                    "surface": "#f9f9f9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "article-max": "720px",
+                    "gutter": "24px",
+                    "margin-mobile": "20px",
+                    "container-max": "1280px",
+                    "unit": "4px"
+            },
+            "fontFamily": {
+                    "body-md": ["Inter"],
+                    "headline-md": ["Playfair Display"],
+                    "body-lg": ["Inter"],
+                    "headline-xl-mobile": ["Playfair Display"],
+                    "headline-sm": ["Playfair Display"],
+                    "headline-lg": ["Playfair Display"],
+                    "label-md": ["Inter"],
+                    "headline-xl": ["Playfair Display"],
+                    "label-sm": ["Inter"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["20px", {"lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                    "headline-xl-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "1", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .input-focus-accent:focus {
+            border-color: #2b6954 !important;
+            outline: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopAppBar (Shared Component COMPONENTS_9) -->
+<header class="bg-surface dark:bg-background fixed top-0 w-full z-50 border-b border-outline-variant dark:border-outline">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto h-16">
+<div class="flex items-center gap-4">
+<button class="hover:text-secondary transition-colors cursor-pointer active:opacity-70">
+<span class="material-symbols-outlined text-primary dark:text-on-primary-fixed">menu</span>
+</button>
+<a class="font-headline-md text-headline-md tracking-tighter text-primary dark:text-on-primary-fixed" href="#">MarTechAdda</a>
+</div>
+<nav class="hidden md:flex items-center gap-8"><a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="#">Insights</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="#">Article</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="#">About</a>
+<a class="text-primary dark:text-on-primary-fixed font-bold border-b-2 border-primary font-label-md text-label-md" href="#">Contact</a></nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary px-6 py-2 font-label-md text-label-md hover:opacity-80 transition-opacity duration-200">
+                Find Experts
+            </button>
+</div>
+</div>
+</header>
+<main class="pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Hero Section -->
+<section class="max-w-article-max mx-auto text-center mb-20">
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-6">
+            Start Your Expert Discovery
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Connecting industry leaders with elite MarTech specialists. Whether you're looking to scale your marketing stack or join our exclusive network of experts, we're here to facilitate the next step in your journey.
+        </p>
+</section>
+<!-- Main Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+<!-- Contact Info Sidebar -->
+<aside class="md:col-span-4 space-y-12">
+<div>
+<h3 class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-4">Direct Inquiry</h3>
+<a class="font-headline-sm text-headline-sm text-primary hover:text-secondary transition-colors block" href="mailto:hello@martechadda.com">
+                    hello@martechadda.com
+                </a>
+</div>
+<div class="space-y-8">
+<!-- Business Inquiry Section -->
+<div>
+<h3 class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-4">Business Inquiry</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Seeking specific technical expertise? Our concierge team helps businesses source and vet the top 1% of MarTech talent globally.
+                    </p>
+</div>
+<!-- Expert Onboarding Section -->
+<div>
+<h3 class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-4">Expert Onboarding</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Are you an expert in CDP, CRM, or Marketing Automation? Apply to join our curated network and gain access to high-impact projects.
+                    </p>
+</div>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-4">Availability</h3>
+<div class="flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<p class="font-body-md text-body-md text-on-surface">Concierge Response: &lt; 24 Hours</p>
+</div>
+</div>
+<div class="pt-8 border-t border-outline-variant/10">
+<h3 class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-6">Professional Networks</h3>
+<div class="flex flex-col gap-4">
+<a class="group flex items-center justify-between p-4 border border-outline-variant/20 hover:border-primary transition-all" href="#">
+<span class="font-label-md text-label-md">LinkedIn</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">arrow_outward</span>
+</a>
+<a class="group flex items-center justify-between p-4 border border-outline-variant/20 hover:border-primary transition-all" href="#">
+<span class="font-label-md text-label-md">X / Twitter</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">arrow_outward</span>
+</a>
+</div>
+</div>
+</aside>
+<!-- Contact Form -->
+<div class="md:col-span-8 bg-surface-container-lowest p-8 md:p-12 border border-outline-variant/10">
+<h2 class="font-headline-sm text-headline-sm text-primary mb-8">Inquiry Form</h2>
+<form class="space-y-8" id="contact-form">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Name Field -->
+<div class="relative">
+<input class="peer w-full bg-transparent border-0 border-b border-outline-variant/30 py-4 focus:ring-0 input-focus-accent transition-colors font-body-md text-body-md" id="name" name="name" placeholder=" " required="" type="text">
+<label class="absolute left-0 top-4 text-outline pointer-events-none transition-all duration-300 transform peer-focus:-translate-y-6 peer-focus:text-xs peer-focus:text-secondary peer-[:not(:placeholder-shown)]:-translate-y-6 peer-[:not(:placeholder-shown)]:text-xs" for="name">Full Name</label>
+</div>
+<!-- Company Field -->
+<div class="relative">
+<input class="peer w-full bg-transparent border-0 border-b border-outline-variant/30 py-4 focus:ring-0 input-focus-accent transition-colors font-body-md text-body-md" id="company" name="company" placeholder=" " required="" type="text">
+<label class="absolute left-0 top-4 text-outline pointer-events-none transition-all duration-300 transform peer-focus:-translate-y-6 peer-focus:text-xs peer-focus:text-secondary peer-[:not(:placeholder-shown)]:-translate-y-6 peer-[:not(:placeholder-shown)]:text-xs" for="company">Company / Organization</label>
+</div>
+</div>
+<!-- Inquiry Type -->
+<div class="relative">
+<select class="peer w-full bg-transparent border-0 border-b border-outline-variant/30 py-4 focus:ring-0 input-focus-accent transition-colors font-body-md text-body-md appearance-none" id="inquiry-type" name="inquiry-type" required="">
+<option disabled="" selected="" value="">Select Inquiry Type</option>
+<option value="business">I am looking for an expert</option>
+<option value="expert">I want to join the expert network</option>
+<option value="other">General Inquiry</option>
+</select>
+</div>
+<!-- Message Field -->
+<div class="relative pt-4">
+<textarea class="peer w-full bg-transparent border border-outline-variant/30 p-4 focus:ring-0 input-focus-accent transition-colors font-body-md text-body-md resize-none" id="message" name="message" placeholder=" " required="" rows="5"></textarea>
+<label class="absolute left-4 -top-0 text-outline pointer-events-none transition-all duration-300 transform peer-focus:translate-y-1 peer-focus:text-xs peer-focus:text-secondary peer-[:not(:placeholder-shown)]:translate-y-1 peer-[:not(:placeholder-shown)]:text-xs bg-surface-container-lowest px-1" for="message">Specific Requirements or Background</label>
+</div>
+<div class="flex flex-col md:flex-row items-center justify-between gap-6 pt-4">
+<p class="font-label-sm text-label-sm text-on-surface-variant max-w-sm">
+                        By submitting, you agree to our privacy policy regarding the processing of professional data for matchmaking purposes.
+                    </p>
+<button class="w-full md:w-auto bg-primary text-on-primary px-12 py-4 font-label-md text-label-md hover:opacity-90 active:scale-[0.98] transition-all flex items-center justify-center gap-2 group" type="submit">
+                        Send Inquiry
+                        <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">send</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Atmospheric Visual Placeholder -->
+<section class="mt-24 h-96 w-full relative overflow-hidden">
+<div class="absolute inset-0 grayscale opacity-30 mix-blend-multiply">
+<div class="bg-cover bg-center w-full h-full" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBNfbPYAh5To0E82vesBAo_BtJXTKjiIKUKR70TlYfwypbQkcFDbk--WKKWcL3RR9gJsp6pd36zbm7M0uABAAAEhNn4JFFiJR7ybrgOh_C8ld3ViLfrhDEuGZaqf2DWf26yYbdbmdIHBYKJ7Hb13tmqgstIMMcUH10sb1ggwD4LByVSzzdhLX8OKcWrkog58wI-sHBd_fzINVuDWRqUrZKwwG-AEAxOiPhmmONrjj3HaWDJ5mSaykEcOwRjTX4odftBRUnG7gpcix4')"></div>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-[0.2em] mb-2 block">Global Network</span>
+<p class="font-headline-sm text-headline-sm text-primary">MarTech Excellence Unleashed</p>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component COMPONENTS_9) -->
+<footer class="bg-surface-container dark:bg-surface-container-highest border-t border-outline-variant dark:border-outline w-full pt-16 pb-8">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="md:col-span-4 mb-8 md:mb-0">
+<a class="font-headline-sm text-headline-sm text-primary dark:text-on-primary-fixed mb-6 block" href="#">MarTechAdda</a>
+<p class="font-body-md text-body-md text-on-surface dark:text-on-surface-variant max-w-xs">
+                The premier hub for marketing technology expertise and specialized consulting.
+            </p>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-md text-label-md text-primary dark:text-on-primary-fixed font-bold mb-6">Navigation</h4>
+<ul class="space-y-3"><li class=""><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim underline transition-colors" href="#">Home</a></li>
+<li class=""><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim underline transition-colors" href="#">Insights</a></li>
+<li class=""><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim underline transition-colors" href="#">Article</a></li>
+<li class=""><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim underline transition-colors" href="#">About</a></li>
+<li class=""><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim underline transition-colors" href="#">Contact</a></li></ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-md text-label-md text-primary dark:text-on-primary-fixed font-bold mb-6">Legal</h4>
+<ul class="space-y-3">
+<li class=""><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim underline transition-colors" href="#">Privacy</a></li>
+<li class=""><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim underline transition-colors" href="#">Terms</a></li>
+</ul>
+</div>
+<div class="md:col-span-4">
+<h4 class="font-label-md text-label-md text-primary dark:text-on-primary-fixed font-bold mb-6">Stay Informed</h4>
+<div class="flex gap-2">
+<input class="bg-surface-container-lowest px-4 py-2 border border-outline-variant/20 w-full font-body-md text-body-md focus:border-primary outline-none transition-colors" placeholder="Email address" type="email">
+<button class="bg-primary text-on-primary px-4 py-2 hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined">east</span>
+</button>
+</div>
+</div>
+</div>
+<div class="mt-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto pt-8 border-t border-outline-variant/10">
+<div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left">
+                © 2024 MarTechAdda. All rights reserved.
+            </p>
+</div>
+</div>
+</footer>
+<script>
+    // Form Interaction Logic
+    const contactForm = document.getElementById('contact-form');
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const btn = e.target.querySelector('button[type="submit"]');
+        const originalContent = btn.innerHTML;
+        
+        btn.innerHTML = 'Sending Inquiry...';
+        btn.classList.add('opacity-50', 'pointer-events-none');
+        
+        setTimeout(() => {
+            btn.innerHTML = '<span class="material-symbols-outlined">check_circle</span> Inquiry Sent';
+            btn.classList.remove('bg-primary');
+            btn.classList.add('bg-secondary');
+            
+            setTimeout(() => {
+                btn.innerHTML = originalContent;
+                btn.classList.remove('bg-secondary', 'opacity-50', 'pointer-events-none');
+                btn.classList.add('bg-primary');
+                contactForm.reset();
+            }, 3000);
+        }, 1500);
+    });
+
+    // Label Focus Management
+    const inputs = document.querySelectorAll('input, textarea, select');
+    inputs.forEach(input => {
+        input.addEventListener('focus', () => {
+            const label = input.parentElement.querySelector('label');
+            if(label) label.classList.add('text-secondary');
+        });
+        input.addEventListener('blur', () => {
+            const label = input.parentElement.querySelector('label');
+            if(label && !input.value) {
+                label.classList.remove('text-secondary');
+            }
+        });
+    });
+</script>
+
+
+</body></html>

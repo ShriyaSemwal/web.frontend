@@ -1,0 +1,427 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>MarTechAdda | Find &amp; Hire Marketing Experts with Clarity</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed-dim": "#95d3ba",
+                    "primary-container": "#1c1b1b",
+                    "on-tertiary-fixed-variant": "#474747",
+                    "surface-container-low": "#f3f3f3",
+                    "inverse-primary": "#c8c6c5",
+                    "on-error-container": "#93000a",
+                    "background": "#f9f9f9",
+                    "on-primary-fixed": "#1c1b1b",
+                    "secondary": "#2b6954",
+                    "on-secondary-fixed-variant": "#0b513d",
+                    "outline": "#747878",
+                    "on-primary": "#ffffff",
+                    "on-surface-variant": "#444748",
+                    "on-surface": "#1a1c1c",
+                    "on-background": "#1a1c1c",
+                    "secondary-container": "#adedd3",
+                    "on-tertiary-container": "#848483",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#858383",
+                    "primary-fixed": "#e5e2e1",
+                    "surface-bright": "#f9f9f9",
+                    "on-secondary-fixed": "#002117",
+                    "inverse-on-surface": "#f0f1f1",
+                    "surface-container-high": "#e8e8e8",
+                    "tertiary": "#000000",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "surface-dim": "#dadada",
+                    "tertiary-fixed": "#e4e2e2",
+                    "outline-variant": "#c4c7c7",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "error": "#ba1a1a",
+                    "on-secondary-container": "#306d58",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed-variant": "#474746",
+                    "surface-variant": "#e2e2e2",
+                    "tertiary-fixed-dim": "#c8c6c6",
+                    "surface-tint": "#5f5e5e",
+                    "inverse-surface": "#2f3131",
+                    "surface-container": "#eeeeee",
+                    "on-error": "#ffffff",
+                    "tertiary-container": "#1b1c1c",
+                    "secondary-fixed": "#b0f0d6",
+                    "primary": "#000000",
+                    "surface": "#f9f9f9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "article-max": "720px",
+                    "gutter": "24px",
+                    "margin-mobile": "20px",
+                    "container-max": "1280px",
+                    "unit": "4px"
+            },
+            "fontFamily": {
+                    "body-md": ["Inter"],
+                    "headline-md": ["Playfair Display"],
+                    "body-lg": ["Inter"],
+                    "headline-xl-mobile": ["Playfair Display"],
+                    "headline-sm": ["Playfair Display"],
+                    "headline-lg": ["Playfair Display"],
+                    "label-md": ["Inter"],
+                    "headline-xl": ["Playfair Display"],
+                    "label-sm": ["Inter"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["20px", {"lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                    "headline-xl-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "1", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 10px 40px rgba(0,0,0,0.04);
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-on-scroll.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary/20">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md border-b border-outline-variant/10">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-16">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-80 transition-opacity">menu</span>
+<a class="font-headline-sm text-headline-sm tracking-tighter text-primary" href="#">MarTechAdda</a>
+</div>
+<nav class="hidden md:flex items-center gap-8"><a class="text-primary font-bold border-b-2 border-primary font-label-md text-label-md py-1" href="#">Home</a><a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md py-1" href="#">Insights</a><a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md py-1" href="#">Article</a><a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md py-1" href="#">About</a><a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md py-1" href="#">Contact</a></nav>
+<div class="flex items-center gap-6">
+<button class="hidden sm:block font-label-md text-label-md text-primary hover:text-secondary transition-colors">Join as Expert</button>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:text-secondary transition-colors">search</span>
+</div>
+</div>
+</header>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative min-h-[751px] flex items-center bg-surface-bright overflow-hidden reveal-on-scroll active">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full grid grid-cols-1 md:grid-cols-12 gap-gutter items-center py-20">
+<div class="md:col-span-7 z-10">
+<span class="inline-block text-secondary font-label-md text-label-md mb-6 tracking-widest uppercase">Verified Talent Network</span>
+<h1 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl mb-8 max-w-[15ch]">
+                    Find &amp; Hire Marketing Experts with <span class="italic font-normal text-secondary">Clarity</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-article-max">
+                    MarTechAdda is a neutral marketing-expert discovery platform that helps businesses find, evaluate, and connect with verified marketing professionals.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-10 py-4 font-label-md text-label-md hover:bg-secondary transition-colors duration-300">Find Marketing Experts</button>
+<button class="border border-outline px-10 py-4 font-label-md text-label-md hover:bg-surface-container transition-colors duration-300">Join as Marketing Expert</button>
+</div>
+</div>
+<div class="md:col-span-5 relative mt-12 md:mt-0">
+<div class="aspect-[4/5] relative overflow-hidden bg-surface-container">
+<img alt="Professional marketing consultation in a high-end office environment" class="w-full h-full object-cover grayscale brightness-95 contrast-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm7qY9cdAGBVjmKFTdMH_RrncwnK2PmDmpWNrwi2g3KSwEi7qyVw7hp-4oRVxs4i8RwQ2GI3d4vviD-xekyOglOu9Sl6oyvv_QEgsAS9KVQEZD2k54HAQC7vAWBLsW_dl7w-o7WjFlzA7JlYT38AG4hhMZPguoztXdwKU7z3qlcEPNB4BucbVOKtjsAdAvg1baQicm_0exyHNYWBkRqEsNBK7QgGWPdMArOVdbujtW85cnsIjo4YPTd5qmXSBL7BmxxZeZu5p-Qrc">
+<div class="absolute inset-0 border-[16px] border-surface-bright/20 pointer-events-none"></div>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-secondary text-on-secondary p-8 hidden lg:block">
+<p class="font-headline-sm text-headline-sm italic">"Neutrality is the foundation of effective hiring."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Marketing Insights & Guides -->
+<section class="py-24 bg-surface-container-lowest reveal-on-scroll active">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex justify-between items-end mb-16 border-b border-outline-variant/20 pb-8">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-2">Marketing Insights &amp; Guides</h2>
+<p class="text-on-surface-variant font-body-md">Master the art and science of modern marketing.</p>
+</div>
+<a class="font-label-md text-label-md text-secondary flex items-center gap-2 group" href="#">
+                    Browse all insights
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Card 1 -->
+<article class="group cursor-pointer reveal-on-scroll active">
+<div class="aspect-[16/9] overflow-hidden mb-6 bg-surface-container">
+<img alt="Strategy planning session" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdx3p3HdFMGPA8pNXkjZPLboHTf7nogbuWbo58vjiBX4AbjZq1_DQ_XL4c00QWyWgQMAotQJOSsIM3WsfVteTKaxRZ6E501qzxcUHDw4GMyzuvMLKpYUPhkqhlPHa4gJmWP6qEL-Q3K82vWoQC7A4dxITHdJQXWAUhCUavoEXtR-jpBmyqRy7mW1rU1lpiBwGgWq3svxySBAs1bLIYV92Ez6dAeFqjeIqd6yz_Tjp4rj7un6hojUlQCJNxxPV0g38f-1H3VeUw9SY">
+</div>
+<span class="text-secondary font-label-sm text-label-sm uppercase tracking-widest mb-3 block">Strategic Marketing</span>
+<h3 class="font-headline-md text-headline-md mb-4 group-hover:text-secondary transition-colors">The Future of Multi-Channel ROI</h3>
+<p class="text-on-surface-variant line-clamp-2 font-body-md mb-6">How top-tier CMOs are re-evaluating attribution in a privacy-first world.</p>
+<div class="flex items-center gap-4 text-on-surface-variant font-label-sm text-label-sm">
+<span class="">Updated Weekly</span>
+<span class="w-1 h-1 bg-outline rounded-full"></span>
+<span class="">10 min read</span>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="group cursor-pointer reveal-on-scroll active">
+<div class="aspect-[16/9] overflow-hidden mb-6 bg-surface-container">
+<img alt="MarTech stack visual" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3cuvQtx-wsub6nNOVioZteUUv7Eth4sjJRWdWXZfnZMZbYSZOTj-DrK4wKz51gULD0iurWYZpuSGYFUC2ogYsvoE_4Y6iUU1OS3el3mMXdUGHzgUuOpBQXN4NkzXvb4f68xEK3HBXYOp2frJ0jV3hmen6mY-kidaD4TvEPKTJ72qqpPFM7Oj3gIN0a-QChO1_-W7be_fjKhV7G6C48HqQEuxliLXXyyV1O-6p0HAYeO3LAWLUwkH0X1nw0HuyWXh7yddIar4xWZY">
+</div>
+<span class="text-secondary font-label-sm text-label-sm uppercase tracking-widest mb-3 block">Marketing Technology</span>
+<h3 class="font-headline-md text-headline-md mb-4 group-hover:text-secondary transition-colors">Navigating the MarTech Maze</h3>
+<p class="text-on-surface-variant line-clamp-2 font-body-md mb-6">A neutral guide to selecting the right technology stack for your growth stage.</p>
+<div class="flex items-center gap-4 text-on-surface-variant font-label-sm text-label-sm">
+<span class="">New Release</span>
+<span class="w-1 h-1 bg-outline rounded-full"></span>
+<span class="">15 min read</span>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="group cursor-pointer reveal-on-scroll active">
+<div class="aspect-[16/9] overflow-hidden mb-6 bg-surface-container">
+<img alt="Branding documentation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9JYajkmIqs0j9qizKiLXlDhp6EPGY4NqAXVY-ubsgxllEDNfmWm19VMsmoKOlpTlO1ahdEl9S682v6lsVQeYH1FemQqLGPP5zJy58ch0sO6prZfn_-_FcD7lZB3ElC7v2bqU72wjRBI15pynSj676R6RWqukWmYpxxp4fZVMTRSVp5WZ7eqW5JlwYvvXF3sbdFPuQun3nYCBrpKl5au8ISbteReBiBkCJIyFocom2NLB8DxARp5rmxMz71ExDaRv2FvUS7qnKO-g">
+</div>
+<span class="text-secondary font-label-sm text-label-sm uppercase tracking-widest mb-3 block">Branding</span>
+<h3 class="font-headline-md text-headline-md mb-4 group-hover:text-secondary transition-colors">Building Brand Equity in 2024</h3>
+<p class="text-on-surface-variant line-clamp-2 font-body-md mb-6">Why authentic storytelling remains the strongest competitive advantage for startups.</p>
+<div class="flex items-center gap-4 text-on-surface-variant font-label-sm text-label-sm">
+<span class="">Evergreen</span>
+<span class="w-1 h-1 bg-outline rounded-full"></span>
+<span class="">12 min read</span>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Categories Pill Tags -->
+<section class="py-16 bg-surface reveal-on-scroll active">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<h3 class="font-label-md text-label-md mb-10 text-on-surface-variant uppercase tracking-widest">Find Expertise By Category</h3>
+<div class="flex flex-wrap justify-center gap-4">
+<a class="px-6 py-2 bg-surface-container-highest text-primary font-label-md text-label-md rounded-full hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">Branding</a>
+<a class="px-6 py-2 bg-surface-container-highest text-primary font-label-md text-label-md rounded-full hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">Strategic Marketing</a>
+<a class="px-6 py-2 bg-surface-container-highest text-primary font-label-md text-label-md rounded-full hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">Advertising</a>
+<a class="px-6 py-2 bg-surface-container-highest text-primary font-label-md text-label-md rounded-full hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">Marketing Technology</a>
+<a class="px-6 py-2 bg-surface-container-highest text-primary font-label-md text-label-md rounded-full hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">Business Growth</a>
+</div>
+</div>
+</section>
+<!-- Why Readers Follow (Value Proposition) -->
+<section class="py-24 bg-primary text-on-primary overflow-hidden reveal-on-scroll active">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-8">Expertise-Based Discovery You Can Trust</h2>
+<p class="font-body-lg text-body-lg text-on-primary/70 mb-12">MarTechAdda is built on the principle of verified competence. We remove the guesswork from hiring elite marketing talent.</p>
+<div class="space-y-8">
+<div class="flex items-start gap-6">
+<div class="w-12 h-12 flex-shrink-0 border border-on-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary">verified_user</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm mb-2">Verified Professional Network</h4>
+<p class="text-on-primary/60">Every expert on our platform undergoes a rigorous vetting process based on real-world results, not just resumes.</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="w-12 h-12 flex-shrink-0 border border-on-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary">search_check</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm mb-2">Neutral Matching Framework</h4>
+<p class="text-on-primary/60">We don't play favorites. Our discovery algorithms are strictly based on skill-alignment and performance data.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="grid grid-cols-2 gap-6">
+<div class="space-y-6 pt-12">
+<div class="bg-on-primary/5 p-8 border border-on-primary/10">
+<div class="text-4xl font-headline-xl mb-2 italic">100%</div>
+<p class="text-on-primary/60 font-label-sm uppercase">Verified Experts</p>
+</div>
+<div class="bg-on-primary/5 p-8 border border-on-primary/10">
+<div class="text-4xl font-headline-xl mb-2 italic">5k+</div>
+<p class="text-on-primary/60 font-label-sm uppercase">Business Matches</p>
+</div>
+</div>
+<div class="space-y-6">
+<div class="bg-on-primary/5 p-8 border border-on-primary/10">
+<div class="text-4xl font-headline-xl mb-2 italic">50+</div>
+<p class="text-on-primary/60 font-label-sm uppercase">Skill Verticals</p>
+</div>
+<div class="bg-on-primary/5 p-8 border border-on-primary/10">
+<div class="text-4xl font-headline-xl mb-2 italic">4.9/5</div>
+<p class="text-on-primary/60 font-label-sm uppercase">Hiring Satisfaction</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 bg-surface-container-low reveal-on-scroll active">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-headline-lg text-headline-lg text-center mb-16">Trusted by founders building the future</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-lowest p-12 border border-outline-variant/10 editorial-shadow reveal-on-scroll active">
+<p class="font-body-lg italic mb-10 text-on-surface">"MarTechAdda simplified our search for a Growth Lead. The depth of verification gave us the confidence to hire an expert who truly understood our niche tech stack."</p>
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 bg-surface-container overflow-hidden">
+<img alt="Sarah Chen, Tech Founder" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSnFbo1rj3sk4Craa71xllwHc_Id8Y1gVD2ovBMxUBW1ZecD7ALGaH2vjnLfU6yEol3gCtcjYFyld09sXY43Y384iv2lnENsB_ny_0Z4KJI2wYqovyTdQOXe-P2tCbNj7-YgmGa8nUWDzz4bp1oeqYsOh07e18Gw1w_NGaIglaPlvt3_uJmwG0yDemDe8q3iHDYm3tdY-GEnsyMJrNWVHGP_rN3b7xzprOJRyoibG8IA5iiF9pn1RIIeNKOunwx96x2db_b5f2Kp8">
+</div>
+<div>
+<h5 class="font-label-md text-label-md text-primary">Sarah Chen</h5>
+<p class="text-on-surface-variant text-label-sm">Founder at NeoLaunch</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-lowest p-12 border border-outline-variant/10 editorial-shadow reveal-on-scroll active">
+<p class="font-body-lg italic mb-10 text-on-surface">"As a founder, I don't have time to vet dozens of freelancers. MarTechAdda's neutral approach and expert vetting saved us months of trial and error."</p>
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 bg-surface-container overflow-hidden">
+<img alt="Marcus Thorne, Entrepreneur" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_P4Ui7p0Bf0PjrcYbz8ZIz_-Aq8ssLbzeNtr3NQEptaThQz6n7RAnLlPLoNwXJoPoENncgvIarMpa1muuuh70RQnHBoAZokBp6WdeVwBWlATnAtjw6VrKUTLR6FpbBZXWjVGb7ARNIEPs1MHwcA_Hn0Es5mzwwFi8pZTLVAj24hLnQYtzAJ5wyQ1oGwiBhZt1Wn9UzCQX-bBQ5xpi7lZQ1TDGj6rLHZZcDgJBiqzcPZaV0CL4Dhm6rLtkKHrtp5lSTgXmz-XVT6A">
+</div>
+<div>
+<h5 class="font-label-md text-label-md text-primary">Marcus Thorne</h5>
+<p class="text-on-surface-variant text-label-sm">Founder, Thorne Systems</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter -->
+<section class="py-32 relative reveal-on-scroll active">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center relative z-10">
+<div class="max-w-[800px] mx-auto">
+<span class="inline-block px-4 py-1 border border-secondary text-secondary font-label-sm text-label-sm uppercase tracking-widest mb-8">Community</span>
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl mb-6">Join the MarTech Network</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">Get expert-curated marketing guides and hiring tips delivered directly to your inbox. No noise, just high-signal insights.</p>
+<form class="flex flex-col sm:flex-row gap-4 max-w-[600px] mx-auto group">
+<input class="flex-grow bg-white border-none border-b border-outline-variant/30 px-6 py-4 focus:ring-0 focus:border-secondary transition-colors font-body-md" placeholder="Email address" required="" type="email">
+<button class="bg-primary text-on-primary px-10 py-4 font-label-md text-label-md hover:bg-secondary transition-colors duration-300" type="submit">Join Now</button>
+</form>
+<p class="mt-6 text-on-surface-variant text-label-sm">Verified expertise since 2018. Unsubscribe anytime.</p>
+</div>
+</div>
+<!-- Decorative atmospheric background element -->
+<div class="absolute inset-0 -z-0 opacity-[0.03] pointer-events-none flex items-center justify-center overflow-hidden">
+<span class="font-headline-xl text-[40vw] select-none">MARTECH</span>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container dark:bg-surface-container-highest border-t border-outline-variant dark:border-outline">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-16">
+<div class="md:col-span-4">
+<a class="font-headline-sm text-headline-sm text-primary dark:text-on-primary-fixed block mb-6" href="#">MarTechAdda</a>
+<p class="text-on-surface dark:text-on-surface-variant font-body-sm text-body-sm mb-8 max-w-[300px]">
+                The neutral marketing-expert discovery platform for high-growth businesses and elite talent.
+            </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-outline-variant/30 flex items-center justify-center hover:text-secondary transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">public</span>
+</a>
+<a class="w-10 h-10 border border-outline-variant/30 flex items-center justify-center hover:text-secondary transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">chat_bubble</span>
+</a>
+<a class="w-10 h-10 border border-outline-variant/30 flex items-center justify-center hover:text-secondary transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">alternate_email</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-2 mt-8 md:mt-0">
+<h6 class="font-label-md text-label-md text-primary dark:text-on-primary-fixed mb-6 uppercase">Navigation</h6>
+<ul class="space-y-4"><li class=""><a class="text-on-surface dark:text-on-surface-variant hover:text-secondary underline font-body-sm text-body-sm" href="#">Home</a></li><li class=""><a class="text-on-surface dark:text-on-surface-variant hover:text-secondary underline font-body-sm text-body-sm" href="#">Insights</a></li><li class=""><a class="text-on-surface dark:text-on-surface-variant hover:text-secondary underline font-body-sm text-body-sm" href="#">Article</a></li><li class=""><a class="text-on-surface dark:text-on-surface-variant hover:text-secondary underline font-body-sm text-body-sm" href="#">About</a></li><li class=""><a class="text-on-surface dark:text-on-surface-variant hover:text-secondary underline font-body-sm text-body-sm" href="#">Contact</a></li></ul>
+</div>
+<div class="md:col-span-2 mt-8 md:mt-0">
+<h6 class="font-label-md text-label-md text-primary dark:text-on-primary-fixed mb-6 uppercase">Legal</h6>
+<ul class="space-y-4">
+<li class=""><a class="text-on-surface dark:text-on-surface-variant hover:text-secondary underline font-body-sm text-body-sm" href="#">Privacy</a></li>
+<li class=""><a class="text-on-surface dark:text-on-surface-variant hover:text-secondary underline font-body-sm text-body-sm" href="#">Terms</a></li>
+</ul>
+</div>
+<div class="md:col-span-4 mt-12 md:mt-0">
+<div class="bg-surface p-8 border border-outline-variant/20">
+<h6 class="font-label-md text-label-md text-primary mb-4 uppercase">Weekly Digest</h6>
+<p class="text-on-surface-variant font-body-md mb-6">Join our network of founders and marketing leaders.</p>
+<div class="flex gap-2">
+<input class="w-full bg-white border-outline-variant/30 text-label-md p-2" placeholder="Email" type="text">
+<button class="bg-primary text-on-primary px-4 py-2 text-label-sm">GO</button>
+</div>
+</div>
+</div>
+<div class="md:col-span-12 mt-16 pt-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-on-surface dark:text-on-surface-variant font-body-sm text-body-sm">© 2024 MarTechAdda. All rights reserved.</p>
+<div class="flex gap-8">
+<span class="text-on-surface dark:text-on-surface-variant font-body-sm text-body-sm">Design by MarTech Studio</span>
+<span class="text-on-surface dark:text-on-surface-variant font-body-sm text-body-sm">EST. 2018</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    // Simple intersection observer for reveal effects
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('section, article, .editorial-shadow').forEach(el => {
+        el.classList.add('reveal-on-scroll');
+        observer.observe(el);
+    });
+
+    // Micro-interactions
+    document.querySelectorAll('button').forEach(btn => {
+        btn.addEventListener('mousedown', () => btn.classList.add('scale-95'));
+        btn.addEventListener('mouseup', () => btn.classList.remove('scale-95'));
+        btn.addEventListener('mouseleave', () => btn.classList.remove('scale-95'));
+    });
+</script>
+
+
+</body></html>
